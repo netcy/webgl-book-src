@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>使用canvas标签</title>
+	</head>
+	<script type="text/javascript">
+		function load(){
+			var canvas = document.getElementById('myCanvas');
+			var ctx = canvas.getContext('2d');
+		    	ctx.lineWidth = 2;
+		    	ctx.strokeStyle = "red";
+			ctx.beginPath();
+			ctx.arc(100,75,70,0*Math.PI,2*Math.PI)
+			ctx.stroke();
+		}
+	</script>
+	<body onload= 'load();'>
+			<canvas id = "myCanvas" width = "700" height = "700" />
+	</body>
+</html>
